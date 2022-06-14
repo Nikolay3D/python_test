@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<h1>Управление {{daemon_name}}</h1>
+
+Статус: {{daemon_state}}
+<form>
+<p>
+<button id="btn_toggle_control" formaction="/toggle_control">{{btn_control_text}}</button>
+<p>
+<p>
+<button {{btn_start_state}} id="btn_daemon_start" formaction="/start">Запустить</button>
+<button {{btn_restart_state}} id="btn_daemon_start" formaction="/restart">Перезапустить</button>
+<button {{btn_stop_state}} id="btn_daemon_start" formaction="/stop">Остановить</button>
+</form>
+</body>
+</html>
+
+
+
